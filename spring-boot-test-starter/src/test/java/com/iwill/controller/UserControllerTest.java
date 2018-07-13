@@ -1,6 +1,6 @@
-package com.iwill;
+package com.iwill.controller;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ public class UserControllerTest {
 
     @Test
     public void test_getUsername() {
-        String ussername = userController.getUsername(1234);
-        Assert.assertTrue(ussername.equals("zhangsan"));
+        String username = userController.getUsername(1234);
+        Assert.assertEquals(username ,"zhangsan");
     }
 }
