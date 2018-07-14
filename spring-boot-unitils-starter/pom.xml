@@ -12,6 +12,20 @@
 
     <artifactId>spring-boot-unitils-starter</artifactId>
 
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>public</name>
+            <url>http://localhost:8081/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -26,7 +40,7 @@
         <dependency>
             <groupId>com.github.yangjianzhou</groupId>
             <artifactId>spring-boot-unitils-starter</artifactId>
-            <version>1.0.0.RELEASE</version>
+            <version>1.1.1.RELEASE</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

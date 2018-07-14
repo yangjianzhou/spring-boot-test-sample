@@ -14,7 +14,7 @@ import org.unitils.spring.annotation.SpringBeanByType;
 
 @RunWith(UnitilsBootBlockJUnit4ClassRunner.class)
 @SpringBootTest(classes = DemoTestApplication.class)
-@Transactional(value = TransactionMode.COMMIT)
+@Transactional(value = TransactionMode.ROLLBACK)
 public class UserControllerTest {
 
     @SpringBeanByType
