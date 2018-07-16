@@ -26,7 +26,5 @@ public class UserControllerTest {
         String username = userController.getUsername(1234);
         Assert.assertTrue(username.equals("zhangsan"));
 
-        username = userController.getUsername(12345);
-        Assert.assertTrue(username.equals("lisi"));
     }
 }

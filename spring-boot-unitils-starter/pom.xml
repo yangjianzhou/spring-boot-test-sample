@@ -41,7 +41,6 @@
             <groupId>com.github.yangjianzhou</groupId>
             <artifactId>spring-boot-unitils-starter</artifactId>
             <version>1.1.0.RELEASE</version>
-            <systemPath>/Users/iwill/.m2/repository/com/github/yangjianzhou/spring-boot-unitils-starter/1.1.0.RELEASE/spring-boot-unitils-starter-1.1.0.RELEASE.jar</systemPath>
         </dependency>
     </dependencies>
 </project>
