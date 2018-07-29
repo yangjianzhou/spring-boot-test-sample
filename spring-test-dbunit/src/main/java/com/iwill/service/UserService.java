@@ -12,7 +12,16 @@ public class UserService {
     private UserMapper userMapper;
 
     public String getUsername(Long userId) {
-        UserDTO userDTO = userMapper.selectById(userId);
+        UserDTO userDTO = new UserDTO();
+        userDTO.setName("wangwu");
+        userMapper.insert(userDTO);
+        userDTO.setName("houloiu");
+        userMapper.insert(userDTO);
+        userDTO = userMapper.selectById(userId);
         return userDTO.getName();
+    }
+
+    public Long insertUser(UserDTO userDTO){
+        return userMapper.insert(userDTO);
     }
 }

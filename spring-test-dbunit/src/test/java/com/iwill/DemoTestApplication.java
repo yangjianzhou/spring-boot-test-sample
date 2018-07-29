@@ -11,7 +11,6 @@ import org.springframework.context.annotation.ComponentScan;
 public class DemoTestApplication {
 
     public static void main(String[] args) {
-        System.setProperty("spring.profiles.default", "ut");
         SpringApplication.run(DemoTestApplication.class, args);
     }
 }

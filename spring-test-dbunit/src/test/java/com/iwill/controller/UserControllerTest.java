@@ -30,7 +30,7 @@ public class UserControllerTest {
     @Test
     @DatabaseSetup({"/data/test_getUsername.xls"})
     public void test_getUsername() {
-        String username = userController.getUsername(1234);
-        Assert.assertTrue(username.equals("zhangsan"));
+        String username = userController.getUsername(1);
+        Assert.assertEquals(username,"zhangsan");
     }
 }
